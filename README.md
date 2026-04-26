@@ -36,7 +36,4 @@ npm run dev
 - username: merchant_1
 - password: password
 
-### Live URL
 
-- **Frontend:** [INSERT_VERCEL_LINK_HERE]
-- **Backend API:** [INSERT_RENDER_LINK_HERE]
