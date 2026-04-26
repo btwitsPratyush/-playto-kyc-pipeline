@@ -6,7 +6,7 @@ django.setup()
 
 from django.contrib.auth import get_user_model
 from api.models import KYCSubmission
-from api.state_machine import KYCState
+from api.services.state_machine import KYCState
 
 User = get_user_model()
 
