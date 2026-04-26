@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate, Link, useLocation } from 'react-router-dom';
+import { Routes, Route, Navigate, Link, useLocation, useNavigate } from 'react-router-dom';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
 import MerchantForm from './pages/merchant/MerchantForm';
@@ -26,6 +26,8 @@ function PublicRoute({ children }) {
 }
 
 function App() {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-[#fcfcfd] text-slate-900 font-sans">
       <header className="bg-white/80 backdrop-blur-md border-b border-slate-200/60 px-8 py-4 flex items-center justify-between sticky top-0 z-50">
@@ -46,7 +48,7 @@ function App() {
         {!['/login', '/signup'].includes(useLocation().pathname) && (
           <nav className="flex items-center gap-6">
             <button
-              onClick={() => { localStorage.clear(); window.location.href = '/login' }}
+              onClick={() => { localStorage.clear(); navigate('/login'); }}
               className="text-sm font-semibold text-slate-500 hover:text-slate-900 transition-colors bg-slate-50 hover:bg-slate-100 px-4 py-2 rounded-lg border border-slate-200"
             >
               Sign Out
