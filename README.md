@@ -6,7 +6,7 @@ A production-grade Know Your Customer (KYC) onboarding pipeline built with Djang
 
 This repository fulfills the strict requirements for the Playto KYC Assessment. It includes full role isolations, dynamic SLA calculation on the reviewer dashboard, and centralized state-machine transitions handling side-effects securely.
 
-### Setup Steps
+### Setup Steps:-
 
 **Backend:**
 ```bash
